@@ -16,7 +16,7 @@ export default function LoreSocial(){
 
       {/* 🔥 MOBILE VERSION: Guru Bao muncul di atas lore */}
       <motion.img
-        src="/src/assets/apper.png"
+        src="/assets/apper.png"
         alt="Guru Bao"
         initial={{opacity:0, y:20}}
         animate={{opacity:1, y:0}}
@@ -69,10 +69,10 @@ export default function LoreSocial(){
                 <a className="flex items-center gap-3 p-2 rounded-md hover:bg-gray-50 transition"
                    href="https://x.com/B0BANAD" target="_blank" rel="noreferrer">
                   <img
-                    src="/src/assets/X.jpg"
+                    src="/assets/X.jpg"
                     alt="X"
                     className="w-8 h-8 rounded-full object-cover shadow-sm"
-                    onError={(e)=>{e.currentTarget.onerror=null; e.currentTarget.src='/src/assets/X.svg'}}
+                    onError={(e)=>{e.currentTarget.onerror=null; e.currentTarget.src='/assets/X.svg'}}
                   />
                   <span className="text-sm">Follow on X</span>
                 </a>
@@ -80,10 +80,10 @@ export default function LoreSocial(){
                 <a className="flex items-center gap-3 p-2 rounded-md hover:bg-gray-50 transition"
                    href="https://t.me" target="_blank" rel="noreferrer">
                   <img
-                    src="/src/assets/Telegram.jpg"
+                    src="/assets/Telegram.jpg"
                     alt="Telegram"
                     className="w-8 h-8 rounded-full object-cover shadow-sm"
-                    onError={(e)=>{e.currentTarget.onerror=null; e.currentTarget.src='/src/assets/Telegram.svg'}}
+                    onError={(e)=>{e.currentTarget.onerror=null; e.currentTarget.src='/assets/Telegram.svg'}}
                   />
                   <span className="text-sm">Join Telegram</span>
                 </a>
@@ -91,10 +91,10 @@ export default function LoreSocial(){
                 <a className="flex items-center gap-3 p-2 rounded-md hover:bg-gray-50 transition"
                    href="https://dexscreener.com" target="_blank" rel="noreferrer">
                   <img
-                    src="/src/assets/Dex.jpg"
+                    src="/assets/Dex.jpg"
                     alt="Dexscreener"
                     className="w-8 h-8 rounded-full object-cover shadow-sm"
-                    onError={(e)=>{e.currentTarget.onerror=null; e.currentTarget.src='/src/assets/Dex.svg'}}
+                    onError={(e)=>{e.currentTarget.onerror=null; e.currentTarget.src='/assets/Dex.svg'}}
                   />
                   <span className="text-sm">Dexscreener</span>
                 </a>
@@ -102,7 +102,7 @@ export default function LoreSocial(){
 
               {/* 🔥 DESKTOP VERSION: Floating guru Bao */}
               <motion.img
-                src="/src/assets/apper.png"
+                src="/assets/apper.png"
                 alt="Guru Bao"
                 initial={{opacity:0, rotate:20, y:40}}
                 animate={{opacity:1, rotate:40, y:0}}

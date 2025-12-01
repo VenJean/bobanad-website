@@ -24,7 +24,7 @@
 /* Background image section */
 .hero-bg {
   position: relative;
-  background-image: url('/src/assets/background.jpg');
+  background-image: url('/assets/background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

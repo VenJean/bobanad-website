@@ -34,7 +34,7 @@ export default function Hero(){
                 <div className="font-bold tracking-wide flex items-center gap-2">
                   CA:
                   <img 
-                    src="/src/assets/boba.png"
+                    src="/assets/boba.png"
                     alt="boba"
                     className="w-4 h-4 drop-shadow-md animate-bounce-slow"
                   />
@@ -60,7 +60,7 @@ export default function Hero(){
 
                 {/* Floating Boba Decoration */}
                 <img
-                  src="/src/assets/boba.png"
+                  src="/assets/boba.png"
                   alt="floating boba"
                   className="w-6 h-6 absolute -bottom-2 -right-2 opacity-20 rotate-12 group-hover:opacity-40 transition duration-300"
                 />
@@ -70,7 +70,7 @@ export default function Hero(){
             {/* Mascot di bawah (mobile) */}
             <motion.div initial={{opacity:0, y:20}} animate={{opacity:1,y:0}} transition={{delay:0.3}} className="lg:hidden mt-6">
               <img 
-                src="/src/assets/maskot.png"
+                src="/assets/maskot.png"
                 alt="Hero Mascot"
                 className="w-full max-w-sm mx-auto drop-shadow-xl animate-float"
               />
@@ -81,7 +81,7 @@ export default function Hero(){
           <motion.div initial={{opacity:0, scale:0.8}} animate={{opacity:1,scale:1}} transition={{delay:0.2, duration:0.6}} className="hidden lg:flex justify-center items-start pt-4">
             <div className="relative">
               <img 
-                src="/src/assets/maskot.png"
+                src="/assets/maskot.png"
                 alt="Hero Mascot"
                 className="w-full max-w-sm drop-shadow-2xl animate-float"
               />

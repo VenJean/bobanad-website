@@ -9,7 +9,7 @@ export default function Footer(){
         className="hidden lg:block pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 opacity-100"
       >
         <img 
-          src="/src/assets/ms.png" 
+          src="/assets/ms.png" 
           alt="footer art"
           className="w-[100px] h-auto object-contain"
         />
@@ -21,7 +21,7 @@ export default function Footer(){
           {/* Left side */}
           <div className="flex items-center gap-3">
             <img 
-              src="/src/assets/logo.jpg" 
+              src="/assets/logo.jpg" 
               alt="logo" 
               className="w-10 h-10 rounded-full object-cover shadow-md" 
             />
