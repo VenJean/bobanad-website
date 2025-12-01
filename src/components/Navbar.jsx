@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -31,7 +32,7 @@ export default function Navbar() {
           {/* LOGO + TITLE */}
           <div className="flex items-center gap-4 group cursor-pointer">
             <img 
-              src="/assets/logo.jpg" 
+                src="/logo.jpg"
               alt="BOBANAD" 
               className="w-12 h-12 rounded-full shadow-lg ring-2 ring-white/20
                          group-hover:scale-105 transition-all duration-300"
