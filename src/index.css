@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+  0% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-15px) scale(1.02); }
+  100% { transform: translateY(0px) scale(1); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Circular logo */
+.logo-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(181,127,172,0.2);
+}
+
+/* Background image section */
+.hero-bg {
+  position: relative;
+  background-image: url('/src/assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.20), rgba(255,249,255,0.20));
+  pointer-events: none;
+}
+
+/* Narrow lore container */
+.lore-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+:root{
+  --bobanad: #b57fac;
+  --bobanad-dark: #654864;
+}
+
+html,body,#root{
+  height:100%;
+}
+
+.soft-card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,249,255,0.8));
+  border-radius: 1rem;
+  box-shadow: 0 6px 24px rgba(101,72,100,0.08);
+  border: 1px solid rgba(101,72,100,0.06);
+}
+
+.purple-glow { box-shadow: 0 6px 30px rgba(181,127,172,0.18), 0 2px 8px rgba(101,72,100,0.08); }
+
+.parallax-slow { transform: translateZ(0); will-change: transform; }
+
+/* Hero grid responsive */
+.hero-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width:1024px){
+  .hero-grid { 
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 2.5rem;
+    align-items: start;
+  }
+}
+
+/* Scroll animation utilities */
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-slideInUp {
+  animation: slideInUp 0.6s ease-out forwards;
+}
+
+.animate-slideInDown {
+  animation: slideInDown 0.5s ease-out forwards;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.6s ease-out forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+
+
